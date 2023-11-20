@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .wrapper{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box{
+    min-height:575px;
+    min-width: 30%;
+     background: #FFFeee;
+     color: #212121;
+     padding: 4px 1.5rem;
+     border-radius:5px;
+     box-shadow: 0 0 4px 2px black;
+  }
+  
+  .button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 8px 0;
+  }
+  
+  #login-heading{
+    text-align: center;
+  
+  }
+  
+  #email{
+    width: 100%;
+    height: 2rem;
+    font-size: 1.3rem;
+    padding-left: 5px;
+    border: none;
+  }
+  
+  #password{
+    width: 100%;
+    height: 2rem;
+    font-size: 1.3rem;
+    padding-left: 5px;
+    border: none;
+  
+  
+  }
+  
+  #right{
+    display: flex;
+    justify-content: right;
+     color:rgba(0, 0, 0, 0.8);
+     cursor: pointer;
+  }
+  
+  #right:active{
+    text-decoration: underline;
+    color:#183d37;
+    user-select: none;
+  }
+  
+  #login-button{
+    width: 102%;
+    height: 1.9rem;
+     font-size: 1.1rem;
+    border: none;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    background-color:#026198;
+    color:#FFFFFF;
+  }
+  
+  #login-button:hover{
+    background-color: #0281cb;
+    cursor: pointer;
+  
+  }
+  
+  .login-btn-div{
+    margin: 10px 0;
+  
+  }
+  
+  .login-btn-div p{
+    margin-top: 4px;
+  }
+  
+  #fadded-text{
+    display: flex;
+    justify-content: center;
+    color:rgba(0, 0, 0, 0.6);
+  }
+  
+  .btn{
+    height: 1.9rem;
+    width: 102%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+  }
+  
+  #btn-color-google{
+     background-color: #d34b36;
+     color: #fff;
+  }
+  
+  #btn-color-facebook{
+    background-color: #3b5998;
+     color: #fff;
+  
+  }
+  
+  #btn-color-linkdin{
+    background-color: #0e76a8;
+     color: #fff;
+  
+  }
+  
+  #btn-color-apple{
+    border:1px solid black;
+  }
+  
+  .signup{
+    margin-top:5px;
+    border:1px solid black;
+  
+  }
+  sup{
+    color:#d34b36;
+  }
+  
+  .input-shadow{
+    box-shadow: 0 0 6px 2px black;
+    border-radius: 5px;
+  }
+  
