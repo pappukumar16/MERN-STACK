@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Arimo:wght@600&family=Bebas+Neue&family=Lexend&family=Mulish:wght@400;500&family=Playpen+Sans&family=Poppins:wght@100&family=Roboto:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./assets/angryimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: center;
+  display: grid;
+  place-items: center;
+  font-family: 'Lexend', sans-serif;
+}
+
+ .game-info{
+  text-align: center;
+  color: #FFFF;
+  position: absolute;
+  top:3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(225, 225, 225, 0.15);
+  border-radius: 1rem;
+  border:1px solid rgba(225, 225, 225, 0.25);
+  padding: 0.5rem 3rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+ }
+
+.tik-tak-toe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ width: 90%;
+ max-width: 20rem;
+  background-color: rgba(225, 225, 225, 0.15);
+  border-radius: 1rem;
+  border:1px solid rgba(225, 225, 225, 0.25);
+ padding: 2rem;
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ aspect-ratio: 1/1;
+
+}
+
+.box{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  font-size: 3rem;
+  color:#FFFF;
+  display: grid;
+  place-content: center;
+}
+
+.box1,.box2,.box4,.box5{
+  border-right: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.box3,.box6{
+  border-bottom: 2px solid #FFFFFF;
+
+}
+
+.box7,.box8{
+  border-right: 2px solid #FFFFFF;
+
+}
+
+.btn{
+  position: absolute;
+  bottom:3rem ;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(225, 225, 225, 0.15);
+  border-radius: 1rem;
+  border:1px solid rgba(225, 225, 225, 0.25);
+  padding: 0.5rem 3rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  color: #FFFF;
+  cursor: pointer;
+  scale: 0;
+}
+
+.btn.active{
+  scale: 1;
+}
+
+.win{
+  background-color: #03AC13;
+}
